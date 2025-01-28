@@ -1,4 +1,4 @@
-package com.yogesh.graphs;
+package com.yogesh.graphs.traversal;
 
 import org.junit.jupiter.api.Test;
 
@@ -8,7 +8,7 @@ import java.util.List;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-public class DetectCycleBFSTest {
+public class DetectCycleDFSTest {
     @Test
     void testDirectedGraphWithCycle() {
         int V = 3;

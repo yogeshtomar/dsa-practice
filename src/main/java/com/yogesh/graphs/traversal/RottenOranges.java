@@ -1,4 +1,4 @@
-package com.yogesh.graphs;
+package com.yogesh.graphs.traversal;
 
 import java.util.LinkedList;
 import java.util.Queue;

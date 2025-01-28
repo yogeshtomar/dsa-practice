@@ -1,4 +1,4 @@
-package com.yogesh.graphs;
+package com.yogesh.graphs.traversal;
 
 import org.junit.jupiter.api.Test;
 

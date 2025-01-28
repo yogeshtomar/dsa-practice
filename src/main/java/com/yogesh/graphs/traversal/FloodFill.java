@@ -1,4 +1,4 @@
-package com.yogesh.graphs;
+package com.yogesh.graphs.traversal;
 
 public class FloodFill {
     /*

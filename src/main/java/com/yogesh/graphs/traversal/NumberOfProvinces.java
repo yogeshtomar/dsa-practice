@@ -1,4 +1,4 @@
-package com.yogesh.graphs;
+package com.yogesh.graphs.traversal;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,4 +1,4 @@
-package com.yogesh.graphs;
+package com.yogesh.graphs.traversal;
 
 import java.util.LinkedList;
 import java.util.List;
@@ -16,7 +16,7 @@ public class DetectCycleBFS {
                 }
             }
         }
-        return false; // No cycle foun
+        return false; // No cycle found
     }
 
     private boolean bfs(List<List<Integer>> adjList, int start, boolean[] visited) {
