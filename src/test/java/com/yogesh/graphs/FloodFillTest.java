@@ -66,7 +66,7 @@ public class FloodFillTest {
     }
 
     @Test
-    void testLargeGrid() {
+    void testLargeGridWithIsolatedPixel() {
         FloodFill floodFill = new FloodFill();
         int[][] image = {
                 {1, 1, 1, 1, 1},
@@ -83,6 +83,31 @@ public class FloodFillTest {
                 {1, 1, 1, 1, 1}
         };
         assertArrayEquals(expected, floodFill.floodFill(image, 2, 2, 2));
+    }
+
+    @Test
+    void testLargeGrid() {
+        FloodFill floodFill = new FloodFill();
+        int[][] image = {
+                {1, 1, 1, 1, 1},
+                {1, 0, 0, 0, 1},
+                {1, 0, 1, 0, 1},
+                {1, 0, 0, 0, 1},
+                {1, 1, 1, 1, 1}
+        };
+
+        int[][] expected = {
+                {1, 1, 1, 1, 1},
+                {1, 2, 2, 2, 1},
+                {1, 2, 1, 2, 1},
+                {1, 2, 2, 2, 1},
+                {1, 1, 1, 1, 1}
+        };
+
+        int[][] result = floodFill.floodFill(image, 1, 1, 2);
+
+        // Validate using assertArrayEquals
+        assertArrayEquals(expected, result);
     }
 
     @Test
